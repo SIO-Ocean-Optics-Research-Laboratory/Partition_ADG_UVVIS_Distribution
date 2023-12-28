@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Test script for the ADG partitioning model code called
 %“Partition_ADG_UVVIS”. The Partition_ADG_UVVIS code is run for one
-%specified input of adg at specified hyperspectral wavelengths (lambda).
+%specified input of adg at specified light wavelengths (lambda).
 %The resulting output from the test script is saved to
 %Partition_ADG_UVVIS_Test_Run_yyyymmdd.xls for comparison with the provided
 %output file Partition_ADG_UVVIS_Test_Run_.xls.
