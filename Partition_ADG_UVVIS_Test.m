@@ -15,7 +15,7 @@
 %2024 (Referenced in code documentation as KSRJ).
 %
 %Created: July 31, 2023
-%Completed: 202X-XX-XX
+%Completed: 2024-01-25
 %Updates: 
 %
 %M. D. Kehrli, D. Stramski, R. A. Reynolds, and I. D. Joshi
