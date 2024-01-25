@@ -1,10 +1,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Test script for the ADG partitioning model code called
-%“Partition_ADG_UV-VIS”. The Partition_ADG_UV-VIS code is run for one
+%“Partition_ADG_UVVIS”. The Partition_ADG_UVVIS code is run for one
 %specified input of adg at specified light wavelengths (lambda). The
 %resulting output from the test script is saved to
-%Partition_ADG_UV-VIS_Test_Run_yyyymmdd.xls for comparison with the provided
-%output file Partition_ADG_UV-VIS_Test_Run_.xls.
+%Partition_ADG_UVVIS_Test_Run_yyyymmdd.xls for comparison with the provided
+%output file Partition_ADG_UVVIS_Test_Run_.xls.
 %
 %Reference:
 %
@@ -154,7 +154,7 @@ lambda = (350:700)';
 PT = [10 90];
 
 %partition adg spectra using partitioning model with UV-VIS library
-[lambda_out,adopt,agopt] = Partition_ADG_UV-VIS(lambda, adg, PT);
+[lambda_out,adopt,agopt] = Partition_ADG_UVVIS(lambda, adg, PT);
 
 %save inputs and outputs into an excel file
 T1 = table(lambda,adg);
@@ -162,6 +162,6 @@ T2 = table(lambda_out,adopt(:,1),agopt(:,1),adopt(:,1)+agopt(:,1),adopt(:,2),ago
 T1.Properties.VariableNames = {'Input Wavelength [nm]','Input adg [1/m]'};
 T2.Properties.VariableNames = {'Output Wavelength [nm]','Output ad (Optimal) [1/m]','Output ag (Optimal) [1/m]','Output adg (Optimal) [1/m]','Output ad (10th) [1/m]','Output ag (10th) [1/m]','Output adg (10th) [1/m]','Output ad (90th) [1/m]','Output ag (90th) [1/m]','Output adg (90th) [1/m]'};
 FormatOut = 'yyyymmdd';
-outfile = ['Partition_ADG_UV-VIS_Test_Run_' datestr(datetime,FormatOut)];
+outfile = ['Partition_ADG_UVVIS_Test_Run_' datestr(datetime,FormatOut)];
 writetable(T1,outfile,'FileType','spreadsheet','Sheet','ADG_part_Input')
 writetable(T2,outfile,'FileType','spreadsheet','Sheet','ADG_part_Output_UV_VIS')
