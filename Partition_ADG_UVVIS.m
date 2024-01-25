@@ -1,4 +1,4 @@
-function [lambda_out,adopt,agopt] = Partition_ADG_UV-VIS(lambda_adg,adg,PT)
+function [lambda_out,adopt,agopt] = Partition_ADG_UVVIS(lambda_adg,adg,PT)
 %Implements the absorption partitioning model to partition the
 %non-phytoplankton absorption coefficient, adg, into its two constituents:
 %absorption due to depigmented (non-algal) particles, ad, and absorption
