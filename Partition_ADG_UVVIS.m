@@ -78,7 +78,7 @@ nPT = size(PT,2);
 
 %load library of spectral shape functions, adhat and aghat, which
 %characterize the variation in the spectral shapes of ad and ag
-%coefficients, respectively, in the UV-VIS spectral range. Note that .mat
+%coefficients, respectively, in the UVVIS spectral range. Note that .mat
 %file must be in function path to load to workspace.
 shapelib = load('UVVIS_lib.mat');
 %get the row indices where input adg has valid values between 350 and 700
